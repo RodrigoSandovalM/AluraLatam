@@ -1,0 +1,52 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar { 
+    width: 100%;
+    display: flex;
+    height: calc(100px + 10px);
+    background-color: #161515;
+    position: fixed;
+    z-index: 99999999999;
+
+}
+
+
+.linksPorf { 
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff; /* Color blanco */
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.dising {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #0089ff66;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+
+}
+
+.dising2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #0089ff66;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: 1;
+
+}
