@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Link } from "@mui/material";
 import "../assets/main.css";
-import { Carrusel } from "./Carrusel";
+
 
 const NavBar = () => {
   return (

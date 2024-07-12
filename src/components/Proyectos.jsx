@@ -34,11 +34,7 @@ export const Proyectos = () => {
         position: "relative",
       }}
     >
-        <Collage/>
-    
-
-    
-      
+      <Collage />
     </Box>
   );
 };
