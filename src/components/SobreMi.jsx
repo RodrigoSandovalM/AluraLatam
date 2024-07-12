@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import fondo from "../assets/videos/fondo.mp4";
 import "../assets/SobreMi.css";
 import Rodrigo from "../assets/img/Rodrigo.jpg";
+import { Carrusel } from "./Carrusel";
 
 export const SobreMi = () => {
   return (
@@ -44,27 +45,30 @@ export const SobreMi = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                flexDirection:'column'
               }}
             >
               <Box
                 sx={{
                   width: "80%",
-                  height: "50%",
+                  height: "auto",
                   backgroundColor: "#00000085",
                   borderRadius: "15px",
                   border: "2px solid #1a1a1a",
                   color: "#fff",
                 }}
               >
-                <Box sx={{ p: "50px" }}>
-                  <Typography variant="h3" component="h1" gutterBottom>
-                    Rodrigo Sandoval
-                  </Typography>
-                  <Typography variant="h5" component="h1" gutterBottom>
-                    Desarrollador Front End
-                  </Typography>
+                <Box sx={{ p: "50px", height: "calc(100% - 100px)" }}>
+                  <Box sx={{ height: "20%" }}>
+                    <Typography variant="h3" component="h1" gutterBottom>
+                      Rodrigo Sandoval
+                    </Typography>
+                  </Box>
 
-                  <Box sx={{ height:'auto',overflow:'auto'}}>
+                  <Box sx={{ height: "80%", overflow: "auto" }}>
+                    <Typography variant="h5" component="h1" gutterBottom>
+                      Desarrollador Front End
+                    </Typography>
                     <Typography
                       variant="body1"
                       paragraph
@@ -79,6 +83,21 @@ export const SobreMi = () => {
                   </Box>
                 </Box>
               </Box>
+              <Box
+                sx={{
+                  width: "80%",
+                  height: "100px",
+                  marginTop:'10px',
+                  backgroundColor: "#00000085",
+                  borderRadius: "15px",
+                  border: "2px solid #1a1a1a",
+                  color: "#fff",
+                }}
+              >
+                <Box sx={{ height: "50px", marginTop: "10px" }}>
+                  <Carrusel />
+                </Box>
+              </Box>
             </Box>
             <Box
               sx={{
@@ -91,8 +110,8 @@ export const SobreMi = () => {
             >
               <Box
                 sx={{
-                  width: "400px",
-                  height: "400px",
+                  width: "50%",
+                  height: "auto",
                   backgroundColor: "#fff",
                   borderRadius: "100%",
                   border: "4px solid #97979763",
@@ -103,8 +122,8 @@ export const SobreMi = () => {
                   alt=""
                   style={{
                     objectFit: "cover",
-                    width: "400px",
-                    height: "400px",
+                    width: "100%",
+                    height: "100%",
                     borderRadius: "100%",
                   }}
                 />
